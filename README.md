@@ -3,7 +3,10 @@
 
 ## 실습 ##
 
-### Ex01
+### Qt 윈도우 생성
+[01 Qt Window 생성] (https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
+
+### 오픈지엘 윈도우 생성
 [00 Qt로 OpenGL을 사용할 수 있는 윈도우 만들기](https://github.com/dknife/2021Graphics/blob/main/Source/Ex01_00_WindowWQt.py)
 
 [01 Qt로 OpenGL을 사용 연습](https://github.com/dknife/2021Graphics/blob/main/Source/Ex01_00_WindowWQt.py)
