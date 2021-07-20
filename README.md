@@ -4,7 +4,8 @@
 ## 실습 ##
 
 ### Qt 윈도우 생성
-<p align="center">
+<p align="left">
+  <img src="Source/01_Windowing/images/00_firstQT.png" width=150px>
   <img src="Source/01_Windowing/images/00_firstQT.png" width=150px>
 </p>
 
