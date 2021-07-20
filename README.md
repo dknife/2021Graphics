@@ -4,8 +4,9 @@
 ## 실습 ##
 
 ### Qt 윈도우 생성
-
-https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/images/00_firstQT.png
+<p align="center">
+  <img src="Source/01_Windowing/images/00_firstQT.png" width=150px>
+</p>
 
 [01 Qt Window 생성](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 
