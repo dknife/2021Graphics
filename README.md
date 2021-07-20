@@ -6,13 +6,13 @@
 ### 실습 1: Qt 윈도우 생성
 [<img src="Source/01_Windowing/images/00_firstQT.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 [<img src="Source/01_Windowing/images/01_widgets.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
-[<img src="Source/01_Windowing/images/01_widgets.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
+[<img src="Source/01_Windowing/images/01_widgets.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/03_FirstGLWindow.py)
 
 [01 Qt Window 생성](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 
 [02 Qt 위젯 생성](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
 
-[03 Qt 환경에서 OpenGL 윈도 띄우기](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
+[03 Qt 환경에서 OpenGL 윈도 띄우기](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/03_FirstGLWindow.py)
 
 ### 오픈지엘 윈도우 생성
 [00 Qt로 OpenGL을 사용할 수 있는 윈도우 만들기](https://github.com/dknife/2021Graphics/blob/main/Source/Ex01_00_WindowWQt.py)
