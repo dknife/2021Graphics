@@ -6,6 +6,7 @@
 ### 실습 1: Qt 윈도우 생성
 [<img src="Source/01_Windowing/images/00_firstQT.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 [<img src="Source/01_Windowing/images/01_widgets.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
+[<img src="Source/01_Windowing/images/01_widgets.png" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
 
 [01 Qt Window 생성](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 
