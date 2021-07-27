@@ -18,3 +18,11 @@
 * [04 Qt 위젯과 상호작용하는 OpenGL](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/04_GLwQtWidgets.py)
 
 
+### 실습 2: 컬러 모델
+[<img src="Source/01_Windowing/images/11_lightmatobservation.png" height=150px>]()
+[<img src="Source/01_Windowing/images/12_colorinterpolation.png" height=150px>]()
+
+* [01 광원, 재질, 관찰색]()
+
+* [02 색의 보간]()
+
