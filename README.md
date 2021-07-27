@@ -19,8 +19,8 @@
 
 
 ### 실습 2: 컬러 모델
-[<img src="Source/01_Windowing/images/21_lightmatobservation.png" height=150px>]()
-[<img src="Source/01_Windowing/images/22_colorinterpolation.png" height=150px>]()
+[<img src="Source/02_Colors/images/21_lightmatobservation.png" height=150px>]()
+[<img src="Source/02_Colors/images/22_colorinterpolation.png" height=150px>]()
 
 * [01 광원, 재질, 관찰색]()
 
