@@ -19,10 +19,10 @@
 
 
 ### 실습 2: 컬러 모델
-[<img src="Source/02_Colors/images/21_lightmatobservation.png" height=150px>]()
+[<img src="Source/02_Colors/images/21_lightmatobservation.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/01_RGBColors.py)
 [<img src="Source/02_Colors/images/22_colorinterpolation.png" height=150px>]()
 
-* [01 광원, 재질, 관찰색]()
+* [01 광원, 재질, 관찰색](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/01_RGBColors.py)
 
 * [02 색의 보간]()
 
