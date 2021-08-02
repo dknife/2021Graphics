@@ -1,22 +1,22 @@
 # 3D 컴퓨터 그래픽스
 ### 이 저장소는 2021년 동명대학교 게임공학과 그래픽스 프로그래밍 수업을 위한 저장소입니다.
 
+##### 강의 0: 수업소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1_intro.pdf)
+
+##### 강의 1: 그래픽스 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1B_CGintro.pdf)
+
+##### 강의 2: OpenGL + Qt 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec3_GLintro.pdf)
+
+##### 강의 3: 색 모델의 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec04_Colors_intro.pdf)
+
+##### 강의 4: RGB 모델을 이용한 물체 표현 [강의 자료]()
+
+##### 강의 5: OpenGL 프리미티브 [강의 자료]()
+
+
 ## 실습 ##
 
-### 강의 0: 수업소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1_intro.pdf)
-
-### 강의 1: 그래픽스 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1B_CGintro.pdf)
-
-### 강의 2: OpenGL + Qt 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec3_GLintro.pdf)
-
-### 강의 3: 색 모델의 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec04_Colors_intro.pdf)
-
-### 강의 4: RGB 모델을 이용한 물체 표현 [강의 자료]()
-
-### 강의 5: OpenGL 프리미티브 [강의 자료]()
-
-
-#### 실습 1: Qt 윈도우 생성
+### 실습 1: Qt 윈도우 생성
 [<img src="Source/01_Windowing/images/00_firstQT.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 [<img src="Source/01_Windowing/images/01_widgets.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
 [<img src="Source/01_Windowing/images/03_FirstGLWindow.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/03_FirstGLWindow.py)
