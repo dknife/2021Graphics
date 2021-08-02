@@ -3,6 +3,8 @@
 
 ## 실습 ##
 
+### 강의 0: [수업소개](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1_intro.pdf)
+
 ### 실습 1: Qt 윈도우 생성
 [<img src="Source/01_Windowing/images/00_firstQT.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
 [<img src="Source/01_Windowing/images/01_widgets.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/02_QtWidgets.py)
