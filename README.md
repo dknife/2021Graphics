@@ -28,7 +28,8 @@
 
 ### 실습 3: 프리미티브를 이용한 그리기
 [<img src="Source/03_Primitives/images/primitives.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/01_Primitives.py)
-[<img src="Source/03_Primitives/02_Primitives_2.py" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/02_Primitives_2.py)
+[<img src="Source/03_Primitives/images/02_Primitives_2.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/02_Primitives_2.py)
+
 
 * [01 프리미티브 제어](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/01_Primitives.py)
 
