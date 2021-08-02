@@ -25,7 +25,8 @@
 * [04 Qt 위젯과 상호작용하는 OpenGL](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/04_GLwQtWidgets.py)
 
 
-### 실습 2: 컬러 모델
+### 실습 2: 컬러 모델 [강의 자료 1 - 색 모델의 소개](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec04_Colors_intro.pdf)
+
 [<img src="Source/02_Colors/images/21_lightmatobservation.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/01_RGBColors.py)
 [<img src="Source/02_Colors/images/22_colorinterpolation.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/02_ColorInterpolation.py)
 
