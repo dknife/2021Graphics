@@ -9,6 +9,12 @@
 
 ### 강의 2: OpenGL + Qt 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec3_GLintro.pdf)
 
+### 강의 3: 색 모델의 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec04_Colors_intro.pdf)
+
+### 강의 4: RGB 모델을 이용한 물체 표현 [강의 자료]()
+
+### 강의 5: OpenGL 프리미티브 [강의 자료]()
+
 
 #### 실습 1: Qt 윈도우 생성
 [<img src="Source/01_Windowing/images/00_firstQT.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/01_QtWindow.py)
@@ -25,7 +31,7 @@
 * [04 Qt 위젯과 상호작용하는 OpenGL](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/04_GLwQtWidgets.py)
 
 
-### 실습 2: 컬러 모델 [강의 자료 1 - 색 모델의 소개](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec04_Colors_intro.pdf)
+### 실습 2: 컬러 모델 
 
 [<img src="Source/02_Colors/images/21_lightmatobservation.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/01_RGBColors.py)
 [<img src="Source/02_Colors/images/22_colorinterpolation.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/02_ColorInterpolation.py)
