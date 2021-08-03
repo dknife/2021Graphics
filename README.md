@@ -13,6 +13,7 @@
 
 ##### 강의 5: OpenGL 프리미티브 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec5_Primitives.pdf)
 
+##### 강의 6: 카메라의 조작과 Z-버퍼 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec6_CamAndZBuffer.pdf)
 
 ## 실습 ##
 
