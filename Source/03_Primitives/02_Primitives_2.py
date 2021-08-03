@@ -3,7 +3,7 @@ from OpenGL.GLU import *
 
 import sys
 
-from PyQt5.QtWidgets import QOpenGLWidget, QApplication, QMainWindow, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QOpenGLWidget, QApplication, QMainWindow, QVBoxLayout, QHBoxLayout, QWidget
 from PyQt5.QtWidgets import QGroupBox, QComboBox, QPushButton
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QPainter, QPen
@@ -12,11 +12,11 @@ import numpy as np
 
 PRIMITIVES = ['GL_POINTS', 'GL_LINES', 'GL_LINE_STRIP', 'GL_LINE_LOOP',
               'GL_TRIANGLES', 'GL_TRIANGLE_STRIP', 'GL_TRIANGLE_FAN',
-              'GL_QUADS', 'GL_POLYGON']
+              'GL_QUADS', 'GL_QUAD_STRIP', 'GL_POLYGON']
 
 PRIMITIVE_VALUES = [GL_POINTS, GL_LINES, GL_LINE_STRIP, GL_LINE_LOOP,
                     GL_TRIANGLES, GL_TRIANGLE_STRIP, GL_TRIANGLE_FAN,
-                    GL_QUADS, GL_POLYGON]
+                    GL_QUADS, GL_QUAD_STRIP, GL_POLYGON]
 selected = 0
 
 POINTS = [[0, 0], [10, 10], [100, 50]]
@@ -32,24 +32,24 @@ class MyGLWidget(QOpenGLWidget):
         self.colors.append(np.array([0.0, 0.0, 0.0]))
 
     def initializeGL(self):
-        # OpenGL 그리기를 수행하기 전에 각종 상태값을 초기화
+        # ^{\it \color{gray} OpenGL 그리기를 수행하기 전에 각종 상태값을 초기화}^
         glClearColor(0.8, 0.8, 0.6, 1.0)
         glPointSize(4)
         glLineWidth(2)
         glEnable(GL_BLEND)
 
     def resizeGL(self, width, height):
-        # 카메라의 투영 특성을 여기서 설정
+        # ^{\it \color{gray} 카메라의 투영 특성을 여기서 설정}^
         glMatrixMode(GL_PROJECTION)
         glLoadIdentity()
-        glOrtho(0, 350, 300, 0, -1, 1)
+        glOrtho(0, 240, 380, 0, -1, 1)
 
     def paintGL(self):
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
 
-        # 색과 프리미티브를 이용한 객체 그리기
+        # ^{\it \color{gray} 색과 프리미티브를 이용한 객체 그리기}^
         glColor3f(1, 0, 0)
         glBegin(GL_POINTS)
         for i in range(len(POINTS)):
@@ -69,26 +69,26 @@ class MyGLWidget(QOpenGLWidget):
             glVertex2fv(POINTS[i])
         glEnd()
 
-        # 그려진 프레임버퍼를 화면으로 송출
+        # ^{\it \color{gray} 그려진 프레임버퍼를 화면으로 송출}^
         glFlush()
 
 
 class MyWindow(QMainWindow):
 
     def __init__(self, title=''):
-        QMainWindow.__init__(self)  # call the init for the parent class
+        QMainWindow.__init__(self)  # ^{\it \color{gray} call the init for the parent class}^
         self.setWindowTitle(title)
 
-        ### GUI 설정
+        ### ^{\it \color{gray} GUI 설정}^
 
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
 
-        gui_layout = QVBoxLayout()  # CentralWidget에 사용될 수직 나열 레이아웃
-        #    배치될 것들 - GL Window + Control
+        gui_layout = QHBoxLayout()  # ^{\it \color{gray} CentralWidget에 사용될 수직 나열 레이아웃}^
+        # ^{\it \color{gray}    배치될 것들 - GL Window + Control}^
         central_widget.setLayout(gui_layout)
 
-        self.glWidget = MyGLWidget()  # OpenGL Widget
+        self.glWidget = MyGLWidget()  # ^{\it \color{gray} OpenGL Widget}^
         gui_layout.addWidget(self.glWidget)
 
         self.controlGroup = QGroupBox('Vertex and Primitives')
@@ -100,7 +100,7 @@ class MyWindow(QMainWindow):
         for i in range(len(PRIMITIVES)):
             primitive_selection.addItem(PRIMITIVES[i])
 
-        # ComboBox에 기능 연결
+        # ^{\it \color{gray} ComboBox에 기능 연결}^
         primitive_selection.currentIndexChanged.connect(self.selectPrimitive)
 
         reset_button = QPushButton('reset vertices', self)
@@ -146,6 +146,7 @@ class Drawer(QWidget):
 
     def mousePressEvent(self, event):
         POINTS.append([event.x(), event.y()])
+        print(event.x(), event.y())
         self.parent.glWidget.update()
         self.update()
 
@@ -153,7 +154,7 @@ class Drawer(QWidget):
 def main(argv=[]):
     app = QApplication(argv)
     window = MyWindow('Primitives')
-    window.setFixedSize(400, 800)
+    window.setFixedSize(800, 400)
     window.show()
     sys.exit(app.exec_())
 
