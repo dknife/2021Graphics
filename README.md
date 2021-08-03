@@ -11,7 +11,7 @@
 
 ##### 강의 4: RGB 모델을 이용한 물체 표현 실습 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1B_CGintro.pdf)
 
-##### 강의 5: OpenGL 프리미티브 [강의 자료]()
+##### 강의 5: OpenGL 프리미티브 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec5_Primitives.pdf)
 
 
 ## 실습 ##
