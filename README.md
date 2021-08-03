@@ -9,6 +9,8 @@
 
 ##### 강의 3: 색 모델의 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec04_Colors_intro.pdf)
 
+##### 강의 3-B: (실습) RGB 색 조정, 광원-재질 이해 [강의자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1B_CGintro.pdf)
+
 ##### 강의 4: RGB 모델을 이용한 물체 표현 [강의 자료]()
 
 ##### 강의 5: OpenGL 프리미티브 [강의 자료]()
