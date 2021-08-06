@@ -57,7 +57,7 @@
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
 [<img src="Source/04_CamMove/images/nodepth.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/03_NoDepthBuffer.py)
-[<img src="Source/04_CamMove/images/nodepth.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/04_DepthBuffer.py)
+[<img src="Source/04_CamMove/images/zbuffer.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/04_DepthBuffer.py)
 
 * [01 원근투영 카메라 옮겨 놓기](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 
