@@ -71,12 +71,14 @@
 ### 실습 5: 입체 그리기
 
 [<img src="Source/05_Object/images/0501tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
-[<img src="Source/05_Object/images/0502tetra.jpg" height=150px>]()
+[<img src="Source/05_Object/images/0502tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/02_Tetrahedron.py)
 [<img src="Source/05_Object/images/0503_subdivision.jpg" height=150px>]()
 [<img src="Source/05_Object/images/0504_subdivision.jpg" height=150px>]()
 
 * [01 정사면체의 정점](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
 
-* [02 정사면체 그려보기]()
+* [02 정사면체 그려보기](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/02_Tetrahedron.py)
 
+* [03 면을 분할하여 구 만들기](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/02_Tetrahedron.py)
 
+* [04 정점 색상 지정하여 면 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/02_Tetrahedron.py)
