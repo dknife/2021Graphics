@@ -70,11 +70,10 @@
 
 ### 실습 5: 입체 그리기
 
-
-[<img src="Source/05_Object/images/" height=150px>]()
-[<img src="Source/05_Object/images/" height=150px>]()
-[<img src="Source/05_Object/images/" height=150px>]()
-[<img src="Source/05_Object/images/" height=150px>]()
+[<img src="Source/05_Object/images/0501tetra.jpg" height=150px>]()
+[<img src="Source/05_Object/images/0502tetra.jpg" height=150px>]()
+[<img src="Source/05_Object/images/0503subdivision.jpg" height=150px>]()
+[<img src="Source/05_Object/images/0504subdivision.jpg" height=150px>]()
 
 * [01 정사면체의 정점]()
 
