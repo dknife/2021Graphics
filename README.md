@@ -70,10 +70,10 @@
 
 ### 실습 5: 입체 그리기
 
-[<img src="Source/05_Object/images/0501tetra.jpg" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
-[<img src="Source/05_Object/images/0502tetra.jpg" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/02_Tetrahedron.py)
-[<img src="Source/05_Object/images/0503_subdivision.jpg" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/03_subdivision.py)
-[<img src="Source/05_Object/images/0504_subdivision.jpg" height=100px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/04_subdivision_solid.py)
+[<img src="Source/05_Object/images/0501tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
+[<img src="Source/05_Object/images/0502tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/02_Tetrahedron.py)
+[<img src="Source/05_Object/images/0503_subdivision.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/03_subdivision.py)
+[<img src="Source/05_Object/images/0504_subdivision.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/04_subdivision_solid.py)
 
 * [01 정사면체의 정점](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
 
