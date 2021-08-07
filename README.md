@@ -67,3 +67,17 @@
 
 * [04 깊이 버퍼 사용](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/04_DepthBuffer.py)
 
+
+### 실습 5: 입체 그리기
+
+
+[<img src="Source/05_Object/images/" height=150px>]()
+[<img src="Source/05_Object/images/" height=150px>]()
+[<img src="Source/05_Object/images/" height=150px>]()
+[<img src="Source/05_Object/images/" height=150px>]()
+
+* [01 정사면체의 정점]()
+
+* [02 정사면체 그려보기]()
+
+
