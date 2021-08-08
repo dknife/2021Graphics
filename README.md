@@ -15,6 +15,8 @@
 
 ##### 강의 6: 카메라의 조작과 Z-버퍼 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec6_CamAndZBuffer.pdf)
 
+##### 강의 7: 3차원 객체 만들기[강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec7_object.pdf)
+
 ## 실습 ##
 
 ### 실습 1: Qt 윈도우 생성
