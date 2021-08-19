@@ -1,5 +1,17 @@
 # 3D 컴퓨터 그래픽스
 ### 이 저장소는 2021년 동명대학교 게임공학과 그래픽스 프로그래밍 수업을 위한 저장소입니다.
+### 이 저장소의 코드는 Windows 10 / MacOS Big Sur + Visual Studio Code + Python 3 + PyOpenGL + PyQt5 로 테스트되었습니다.
+### Big Sur 환경에서는 다음 파일을 수정해야 합니다.
+#### /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/OpenGL/platform/ctypesloader.py
+#### 수정할 내용
+'''
+fullName = util.find_library( name )
+'''
+를 아래와 같이 수정
+'''
+if name == 'OpenGL':
+    fullName = '/System/Library/Frameworks/OpenGL.framework/OpenGL'
+'''
 
 ##### 강의 0: 수업소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1_intro.pdf)
 
