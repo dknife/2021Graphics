@@ -17,7 +17,7 @@ if name == 'OpenGL':
 
 ##### 강의 0: 수업 오리엔테이션  [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1_intro.pdf) / 수업소개 [강의자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/01_00_%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C.pdf)
 
-##### 강의 1: 그래픽스 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1B_CGintro.pdf)
+##### 강의 1: 그래픽스 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1B_CGintro.pdf) / 파이썬 소개 [강의자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/01_02_Python.pdf)
 
 ##### 강의 2: OpenGL + Qt 소개 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec3_GLintro.pdf)
 
