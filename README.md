@@ -66,7 +66,7 @@ if name == 'OpenGL':
 
 * [02 프리미티브 제어 2](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/02_Primitives_2.py)
 
-* [[step 1]][Primitive_Step1]
+* [step 1]|[Primitive_Step1]
 
 * 
 ### 실습 4: 간단한 카메라 다루기와 깊이 버퍼 활용
