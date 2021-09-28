@@ -5,7 +5,7 @@
 ##### /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/OpenGL/platform/ctypesloader.py
 ###### 수정할 내용
 
-[step 1|Primitive_Step1]
+[[step 1|Primitive_Step1]]
 
 
 fullName = util.find_library( name )
