@@ -10,6 +10,15 @@ from PyQt5.QtGui import QPainter, QPen
 
 import numpy as np
 
+PRIMITIVES = ['GL_POINTS', 'GL_LINES', 'GL_LINE_STRIP', 'GL_LINE_LOOP',
+              'GL_TRIANGLES', 'GL_TRIANGLE_STRIP', 'GL_TRIANGLE_FAN',
+              'GL_QUADS', 'GL_QUAD_STRIP', 'GL_POLYGON']
+
+PRIMITIVE_VALUES = [GL_POINTS, GL_LINES, GL_LINE_STRIP, GL_LINE_LOOP,
+                    GL_TRIANGLES, GL_TRIANGLE_STRIP, GL_TRIANGLE_FAN,
+                    GL_QUADS, GL_QUAD_STRIP, GL_POLYGON]
+selected = 0
+
 POINTS = [[0, 0], [10, 10], [100, 50]]
 
 class MyGLWidget(QOpenGLWidget):
@@ -40,8 +49,34 @@ class MyWindow(QMainWindow):
         self.controlGroup = QGroupBox('Vertex and Primitives')
         gui_layout.addWidget(self.controlGroup)
 
+        control_layout = QVBoxLayout()
+        self.controlGroup.setLayout(control_layout)
+        primitive_selection = QComboBox()
+        for i in range(len(PRIMITIVES)):
+            primitive_selection.addItem(PRIMITIVES[i])
+
+        # ^{\it \color{gray} ComboBox에 기능 연결}^
+        primitive_selection.currentIndexChanged.connect(self.selectPrimitive)
+
+        reset_button = QPushButton('reset vertices', self)
+        reset_button.clicked.connect(self.resetPoints)
+
+        control_layout.addWidget(primitive_selection)
+        control_layout.addWidget(reset_button)
+
         self.canvas = Drawer(parent=self)
         gui_layout.addWidget(self.canvas)
+
+    def selectPrimitive(self, text):
+        global selected
+        selected = int(text)
+        self.glWidget.update()
+
+    def resetPoints(self, btn):
+        global POINTS
+        POINTS = []
+        self.glWidget.update()
+        self.canvas.update()
 
 
 
