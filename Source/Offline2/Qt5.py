@@ -10,6 +10,7 @@ import sys
 class MyOpenGLWidget(QOpenGLWidget):
     def __init__(self):
         super().__init__()
+        self.n = 5
 
     def initializeGL(self):
         glClearColor(1.0, 1.0, 0.0, 1.0)        
@@ -17,12 +18,12 @@ class MyOpenGLWidget(QOpenGLWidget):
     def paintGL(self):
         glClear(GL_COLOR_BUFFER_BIT)
 
-        n = 20
-        theta = 2 * 3.141592 / n
+        
+        theta = 2 * 3.141592 / self.n
 
         glBegin(GL_POLYGON)
         # n 개의 점을 그린다.
-        for i in range(n):
+        for i in range(self.n):
             glVertex2f(math.cos(i*theta), math.sin(i*theta))
         glEnd()
 
@@ -30,7 +31,8 @@ class MyOpenGLWidget(QOpenGLWidget):
         pass
 
     def changeN(self, value):
-        print(value)
+        self.n = value
+        self.update()
 
 
 class MyWindow(QMainWindow):
