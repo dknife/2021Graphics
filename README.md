@@ -47,6 +47,9 @@ if name == 'OpenGL':
 
 * [04 Qt 위젯과 상호작용하는 OpenGL](https://github.com/dknife/2021Graphics/blob/main/Source/01_Windowing/04_GLwQtWidgets.py)
 
+### Offline 실습 2
+
+* [Qt](https://github.com/dknife/2021Graphics/blob/main/Source/02_Colors/01_RGBColors.py)
 
 ### 실습 2: 컬러 모델 
 
