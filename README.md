@@ -53,6 +53,7 @@ if name == 'OpenGL':
 * [Qt 윈도우 만들어 보기](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt2.py)
 * [Qt로 OpenGL 시작](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt3.py)
 * [다각형 만들기](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt4.py)
+* [슬라이더 이벤트와 GLWidget 연결](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt5.py)
 
 ### 실습 2: 컬러 모델 
 
