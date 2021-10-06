@@ -52,7 +52,7 @@ if name == 'OpenGL':
 * [Qt 실행](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt1.py)
 * [Qt 윈도우 만들어 보기](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt2.py)
 * [Qt로 OpenGL 시작](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt3.py)
-* [](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt4.py)
+* [다각형 만들기](https://github.com/dknife/2021Graphics/blob/main/Source/Offline2/Qt4.py)
 
 ### 실습 2: 컬러 모델 
 
