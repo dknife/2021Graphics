@@ -73,10 +73,11 @@ if name == 'OpenGL':
 
 * [02 프리미티브 제어 2](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/02_Primitives_2.py)
 
-* [step1](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step1.py)
+* [step1](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step1.py) - 기본 구성 
 
-* [step2](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step2.py)
+* [step2](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step2.py) - 프리미티브 선택
 
+* [step3](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step3.py) - 입력을 통한 정점 추가
 
 ### 실습 4: 간단한 카메라 다루기와 깊이 버퍼 활용
 
