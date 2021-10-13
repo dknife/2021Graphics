@@ -1,66 +1,58 @@
+# opengl 라이브러리 임포트
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
-import sys
-
-from PyQt5.QtWidgets import QOpenGLWidget, QApplication, QMainWindow, QVBoxLayout, QHBoxLayout, QWidget
-from PyQt5.QtWidgets import QGroupBox, QComboBox, QPushButton
+# pyQt 임포트
+from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QPainter, QPen
 
+import sys
 import numpy as np
 
+PRIMITIVES = ['GL_POINTS', 'GL_LINES', 'GL_LINE_STRIP',
+              'GL_LINE_LOOP', 'GL_TRIANGLES', 'GL_TRIANGLE_STRIP',
+              'GL_TRIANGLE_FAN', 'GL_QUADS', 'GL_QUAD_STRIP', 'GL_POLYGON']
 
+PRIMITIVE_VALUES = [GL_POINTS, GL_LINES, GL_LINE_STRIP,
+              GL_LINE_LOOP, GL_TRIANGLES, GL_TRIANGLE_STRIP,
+              GL_TRIANGLE_FAN, GL_QUADS, GL_QUAD_STRIP, GL_POLYGON]
 
-class MyGLWidget(QOpenGLWidget):
-
-    def __init__(self, parent=None):
-        super(MyGLWidget, self).__init__(parent)
-
-
+seleced = 0
 
 class MyWindow(QMainWindow):
-
     def __init__(self, title=''):
-        QMainWindow.__init__(self)  # ^{\it \color{gray} call the init for the parent class}^
-        self.setWindowTitle(title)
-
-        ### ^{\it \color{gray} GUI 설정}^
+        super().__init__()
 
         central_widget = QWidget()
+        layout = QHBoxLayout()
         self.setCentralWidget(central_widget)
+        central_widget.setLayout(layout)
 
-        gui_layout = QHBoxLayout()  # ^{\it \color{gray} CentralWidget에 사용될 수직 나열 레이아웃}^
-        # ^{\it \color{gray}    배치될 것들 - GL Window + Control}^
-        central_widget.setLayout(gui_layout)
+        # 1. OpenGL Widget
+        self.opengl = MyGLWidget()
+        # 2. Control Widget
+        self.control = QGroupBox('Control')
+        # 3. Painter Widget
+        self.input = Drawer()
 
-        self.glWidget = MyGLWidget()  # ^{\it \color{gray} OpenGL Widget}^
-        gui_layout.addWidget(self.glWidget)
-
-        self.controlGroup = QGroupBox('Vertex and Primitives')
-        gui_layout.addWidget(self.controlGroup)
-
-        self.canvas = Drawer(parent=self)
-        gui_layout.addWidget(self.canvas)
-
-
+class MyGLWidget(QOpenGLWidget):
+    def __init__(self):
+        super().__init__()
 
 class Drawer(QWidget):
     def __init__(self, parent=None):
         QWidget.__init__(self, parent)
-        self.parent = parent
-        self.painter = QPainter()
 
 
-
-
-def main(argv=[]):
-    app = QApplication(argv)
-    window = MyWindow('Primitives')
-    window.setFixedSize(800, 400)
-    window.show()
+def main():
+    app = QApplication(sys.argv)
+    win = MyWindow('My Primitive Test App')
+    win.setFixedSize(800, 400)
+    win.show()
     sys.exit(app.exec_())
 
-
 if __name__ == '__main__':
-    main(sys.argv)
+    main()
+
+
