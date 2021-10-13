@@ -79,6 +79,8 @@ if name == 'OpenGL':
 
 * [step3](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step3.py) - 입력을 통한 정점 추가
 
+* [step4](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step4.py) - 완성
+
 ### 실습 4: 간단한 카메라 다루기와 깊이 버퍼 활용
 
 
