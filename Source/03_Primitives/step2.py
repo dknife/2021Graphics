@@ -1,121 +1,106 @@
+# opengl 라이브러리 임포트
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
-import sys
-
-from PyQt5.QtWidgets import QOpenGLWidget, QApplication, QMainWindow, QVBoxLayout, QHBoxLayout, QWidget
-from PyQt5.QtWidgets import QGroupBox, QComboBox, QPushButton
+# pyQt 임포트
+from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QPainter, QPen
 
+import sys
 import numpy as np
 
-PRIMITIVES = ['GL_POINTS', 'GL_LINES', 'GL_LINE_STRIP', 'GL_LINE_LOOP',
-              'GL_TRIANGLES', 'GL_TRIANGLE_STRIP', 'GL_TRIANGLE_FAN',
-              'GL_QUADS', 'GL_QUAD_STRIP', 'GL_POLYGON']
+PRIMITIVES = ['GL_POINTS', 'GL_LINES', 'GL_LINE_STRIP',
+              'GL_LINE_LOOP', 'GL_TRIANGLES', 'GL_TRIANGLE_STRIP',
+              'GL_TRIANGLE_FAN', 'GL_QUADS', 'GL_QUAD_STRIP', 'GL_POLYGON']
 
-PRIMITIVE_VALUES = [GL_POINTS, GL_LINES, GL_LINE_STRIP, GL_LINE_LOOP,
-                    GL_TRIANGLES, GL_TRIANGLE_STRIP, GL_TRIANGLE_FAN,
-                    GL_QUADS, GL_QUAD_STRIP, GL_POLYGON]
+PRIMITIVE_VALUES = [GL_POINTS, GL_LINES, GL_LINE_STRIP,
+              GL_LINE_LOOP, GL_TRIANGLES, GL_TRIANGLE_STRIP,
+              GL_TRIANGLE_FAN, GL_QUADS, GL_QUAD_STRIP, GL_POLYGON]
+
 selected = 0
 
-POINTS = [[0, 0], [10, 10], [100, 50]]
-
-class MyGLWidget(QOpenGLWidget):
-
-    def __init__(self, parent=None):
-        super(MyGLWidget, self).__init__(parent)
-
-
+points = [ [0, 0], [10, 10], [100, 50]]
 
 class MyWindow(QMainWindow):
-
     def __init__(self, title=''):
-        QMainWindow.__init__(self)  # ^{\it \color{gray} call the init for the parent class}^
-        self.setWindowTitle(title)
-
-        ### ^{\it \color{gray} GUI 설정}^
+        super().__init__()
 
         central_widget = QWidget()
+        layout = QHBoxLayout()
         self.setCentralWidget(central_widget)
+        central_widget.setLayout(layout)
 
-        gui_layout = QHBoxLayout()  # ^{\it \color{gray} CentralWidget에 사용될 수직 나열 레이아웃}^
-        # ^{\it \color{gray}    배치될 것들 - GL Window + Control}^
-        central_widget.setLayout(gui_layout)
+        # 1. OpenGL Widget
+        self.opengl = MyGLWidget()
+        # 2. Control Widget
+        self.control = QGroupBox('Control')
+        self.make_control()
+        # 3. Painter Widget
+        self.input = Drawer()
 
-        self.glWidget = MyGLWidget()  # ^{\it \color{gray} OpenGL Widget}^
-        gui_layout.addWidget(self.glWidget)
+        layout.addWidget(self.opengl)
+        layout.addWidget(self.control)
+        layout.addWidget(self.input)
 
-        self.controlGroup = QGroupBox('Vertex and Primitives')
-        gui_layout.addWidget(self.controlGroup)
-
+    def make_control(self):
         control_layout = QVBoxLayout()
-        self.controlGroup.setLayout(control_layout)
-        primitive_selection = QComboBox()
-        for i in range(len(PRIMITIVES)):
-            primitive_selection.addItem(PRIMITIVES[i])
+        selectCombo = QComboBox()
+        resetButton = QPushButton('reset points', self)
+        control_layout.addWidget(selectCombo)
+        control_layout.addWidget(resetButton)
+        self.control.setLayout(control_layout)
+        
+        for i in range( len(PRIMITIVES)) :
+            selectCombo.addItem(PRIMITIVES[i])
 
-        # ^{\it \color{gray} ComboBox에 기능 연결}^
-        primitive_selection.currentIndexChanged.connect(self.selectPrimitive)
+        selectCombo.currentIndexChanged.connect(self.select)
 
-        reset_button = QPushButton('reset vertices', self)
-        reset_button.clicked.connect(self.resetPoints)
-
-        control_layout.addWidget(primitive_selection)
-        control_layout.addWidget(reset_button)
-
-        self.canvas = Drawer(parent=self)
-        gui_layout.addWidget(self.canvas)
-
-    def selectPrimitive(self, text):
+    def select(self, value):
         global selected
-        selected = int(text)
-        self.glWidget.update()
+        
+        selected = value
+        self.opengl.update()
 
-    def resetPoints(self, btn):
-        global POINTS
-        POINTS = []
-        self.glWidget.update()
-        self.canvas.update()
+class MyGLWidget(QOpenGLWidget):
+    def __init__(self):
+        super().__init__()
 
+    def initializeGL(self):
+        # OpenGL 그리기를 수행하기 전에 각종 상태값을 초기화
+        glClearColor(0.8, 0.8, 0.6, 1.0)
+    
+    def resizeGL(self, w: int, h: int):
+        # 카메라의 투영 특성을 여기서 설정
+        glMatrixMode(GL_PROJECTION)
+        glLoadIdentity()
+        # 새로운 렌즈를 사용한다.
+        glOrtho(0, 250, 360, 0, -1, 1)
 
+    def paintGL(self):
+        
+        glClear(GL_COLOR_BUFFER_BIT)
+        glMatrixMode(GL_MODELVIEW)
+        glLoadIdentity()
+        print(selected)
+        glBegin(PRIMITIVE_VALUES[selected])
+        for i in range(len(points)):
+            glVertex2fv( points[i])
+        glEnd()
 
 class Drawer(QWidget):
     def __init__(self, parent=None):
         QWidget.__init__(self, parent)
-        self.parent = parent
-        self.painter = QPainter()
-
-    def paintEvent(self, event):
-        global POINTS
-
-        self.painter.begin(self)
-        self.painter.setPen(QPen(Qt.red, 6))
-
-        for i in range(len(POINTS)):
-            self.painter.drawPoint(POINTS[i][0], POINTS[i][1])
-
-        self.painter.setPen(QPen(Qt.blue, 2))
-        for i in range(len(POINTS) - 1):
-            self.painter.drawLine(POINTS[i][0], POINTS[i][1], POINTS[i + 1][0], POINTS[i + 1][1])
-        self.painter.end()
-
-    def mousePressEvent(self, event):
-        POINTS.append([event.x(), event.y()])
-        print(event.x(), event.y())
-        self.parent.glWidget.update()
-        self.update()
 
 
-
-
-def main(argv=[]):
-    app = QApplication(argv)
-    window = MyWindow('Primitives')
-    window.setFixedSize(800, 400)
-    window.show()
+def main():
+    app = QApplication(sys.argv)
+    win = MyWindow('My Primitive Test App')
+    win.setFixedSize(800, 400)
+    win.show()
     sys.exit(app.exec_())
 
-
 if __name__ == '__main__':
-    main(sys.argv)
+    main()
+
+
