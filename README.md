@@ -82,7 +82,7 @@ if name == 'OpenGL':
 * [step4](https://github.com/dknife/2021Graphics/blob/main/Source/03_Primitives/step4.py) - 완성
 
 ### 중간고사 답안
-[<img src="Source/05_MidExam/images/midexam.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/01_midexam.py)
+[<img src="Source/05_MidExam/images/midexam.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/midexam.py)
 
 ### 실습 4: 간단한 카메라 다루기와 깊이 버퍼 활용
 
