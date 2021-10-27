@@ -93,6 +93,8 @@ if name == 'OpenGL':
 
 ### 실습 4: 간단한 카메라 다루기와 깊이 버퍼 활용
 
+* [중간고사 내용 개선](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/mid_step4.py)
+
 
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
