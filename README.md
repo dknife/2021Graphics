@@ -84,6 +84,10 @@ if name == 'OpenGL':
 ### 중간고사 답안
 [<img src="Source/05_MidExam/images/midexam.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/midexam.py)
 
+* [step1](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/mid_step1.py)
+
+* [step2](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/mid_step2.py)
+
 ### 실습 4: 간단한 카메라 다루기와 깊이 버퍼 활용
 
 
