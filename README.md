@@ -15,13 +15,6 @@ if name == 'OpenGL':
 
 * PyQt5를 PyQt6로 업그레이드 하면...
 
-새 장난감. MacBook Pro 13 M1. 
-수업 환경인 PyQt에서의 OpenGL 사용을 위해 손질 중. 
-
-고칠 파일
-
-/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/OpenGL/platform/ctypesloader.py
-
 수정할 내용
 
 1. QOpenGLWidget
