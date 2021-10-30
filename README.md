@@ -13,6 +13,26 @@ if name == 'OpenGL':
 
     fullName = '/System/Library/Frameworks/OpenGL.framework/OpenGL'
 
+* PyQt5를 PyQt6로 업그레이드 하면...
+
+새 장난감. MacBook Pro 13 M1. 
+수업 환경인 PyQt에서의 OpenGL 사용을 위해 손질 중. 
+
+고칠 파일
+
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/OpenGL/platform/ctypesloader.py
+
+수정할 내용
+
+1. QOpenGLWidget
+
+PyQt6에서 QOpenGLWidget 클래스의 모듈 이동
+from PyQt6.OpenGLWidgets import *
+
+2. App 실행
+
+exec_() => exec()
+
 ## 강의 
 
 ##### 강의 0: 수업 오리엔테이션  [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec1_intro.pdf) / 수업소개 [강의자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/01_00_%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C.pdf)
