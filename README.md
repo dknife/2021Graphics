@@ -118,7 +118,7 @@ exec_() => exec()
 
 * [애니메이션을 추가하여 관찰](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_03Animation.py)
 
-* [원근 카메라의 적용 (카메라 위치 변경 포함)]()
+* [원근 카메라의 적용 (카메라 위치 변경 포함)](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_04PerspectiveView.py)
 
 
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
