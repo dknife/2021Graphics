@@ -116,6 +116,8 @@ exec_() => exec()
 
 * [3차원 공간에 사각형 두 개 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_02Rects.py)
 
+* [애니메이션을 추가하여 관찰](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_03Animation.py)
+
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
 [<img src="Source/04_CamMove/images/nodepth.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/03_NoDepthBuffer.py)
