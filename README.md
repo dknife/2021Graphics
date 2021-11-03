@@ -108,6 +108,9 @@ exec_() => exec()
 
 * [중간고사 내용 개선](https://github.com/dknife/2021Graphics/blob/main/Source/05_MidExam/mid_step4.py)
 
+### 실습 5: 간단한 3차원 공간 객체 그리기
+
+* [오픈지엘 그리기 창 준비](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects.py)
 
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
