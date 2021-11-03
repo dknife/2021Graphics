@@ -124,6 +124,9 @@ exec_() => exec()
 
 * [깊이버퍼 적용 결과](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_06DepthTest.py)
 
+* [큐브 완성](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_07Cube.py)
+
+
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
 [<img src="Source/04_CamMove/images/nodepth.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/03_NoDepthBuffer.py)
@@ -136,6 +139,7 @@ exec_() => exec()
 * [03 깊이 버퍼 없는 경우](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/03_NoDepthBuffer.py)
 
 * [04 깊이 버퍼 사용](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/04_DepthBuffer.py)
+
 
 
 ### 실습 5: 입체 그리기
