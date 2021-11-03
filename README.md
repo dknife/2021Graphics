@@ -114,6 +114,8 @@ exec_() => exec()
 
 * [렌즈 변경과 축의 위치, 방향 변경](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_01Axis.py)
 
+* [3차원 공간에 사각형 두 개 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_02Rects.py)
+
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
 [<img src="Source/04_CamMove/images/nodepth.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/03_NoDepthBuffer.py)
