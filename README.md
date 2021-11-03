@@ -122,6 +122,8 @@ exec_() => exec()
 
 * [깊이버퍼를 사용하지 않을 때 문제](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_05DepthProblem.py)
 
+* [깊이버퍼 적용 결과](https://github.com/dknife/2021Graphics/blob/main/Source/07_3DScene/3DObjects_06DepthTest.py)
+
 [<img src="Source/04_CamMove/images/lec6_cammove.png" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/01_CamMove.py)
 [<img src="Source/04_CamMove/images/camani.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/02_CamMoveAni.py)
 [<img src="Source/04_CamMove/images/nodepth.gif" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/04_CamMove/03_NoDepthBuffer.py)
