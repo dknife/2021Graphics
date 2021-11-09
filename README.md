@@ -145,7 +145,7 @@ exec_() => exec()
 
 ### 실습 5: 계층적 모델링
 
-[<img src="Source/08_HModeling/images/trans00.jpg" height=150px>]https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_00.py)
+[<img src="Source/08_HModeling/images/trans00.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_00.py)
 
 ### 실습 6: 입체 그리기
 
