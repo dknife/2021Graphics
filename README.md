@@ -147,7 +147,7 @@ exec_() => exec()
 
 [<img src="Source/08_HModeling/images/trans00.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_00.py)
 
-* [01 glPushMatrix/glPopMatrix를 이용하여 내부 변환영향 없애기] (https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_01.py)
+* [01 glPushMatrix/glPopMatrix를 이용하여 내부 변환영향 없애기](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_01.py)
 
 ### 실습 6: 입체 그리기
 
