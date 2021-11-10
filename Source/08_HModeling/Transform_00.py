@@ -50,10 +50,10 @@ def main():
 
 def draw():
     glBegin(GL_LINE_LOOP)
-    glVertex3f(-2,-1, -1)
+    glVertex3f(-1,-1, -1)
     glVertex3f( 2,-1, -1)
     glVertex3f( 2,-1,  1)
-    glVertex3f(-2,-1,  1)
+    glVertex3f(-1,-1,  1)
     glEnd()
     draw_cube()
 
