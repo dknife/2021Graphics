@@ -149,6 +149,8 @@ exec_() => exec()
 
 * [01 glPushMatrix/glPopMatrix를 이용하여 내부 변환영향 없애기](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_01.py)
 
+* [02 지역좌표계를 이용하여 원하는 장면 구현하기](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_02.py)
+
 ### 실습 6: 입체 그리기
 
 [<img src="Source/05_Object/images/0501tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
