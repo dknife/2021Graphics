@@ -151,6 +151,8 @@ exec_() => exec()
 
 * [02 지역좌표계를 이용하여 원하는 장면 구현하기](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_02.py)
 
+* [03 로봇팔 구현해 보기](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_03.py)
+
 ### 실습 6: 입체 그리기
 
 [<img src="Source/05_Object/images/0501tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
