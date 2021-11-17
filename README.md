@@ -155,6 +155,10 @@ exec_() => exec()
 
 * [04 로봇팔 움직이기](https://github.com/dknife/2021Graphics/blob/main/Source/08_HModeling/Transform_04.py)
 
+### 실습 5-1: 로봇 제어하기
+
+* [01 평면에 로봇 몸통 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/Robot/robot01.py)
+
 ### 실습 6: 입체 그리기
 
 [<img src="Source/05_Object/images/0501tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
