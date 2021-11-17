@@ -169,7 +169,7 @@ exec_() => exec()
 
 ### 실습 5-2: 태양계
 
-* [01 구 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/Solor/solar01.py)
+* [01 원 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/Soloar/solar01.py)
 
 
 ### 실습 6: 입체 그리기
