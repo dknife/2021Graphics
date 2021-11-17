@@ -171,6 +171,7 @@ exec_() => exec()
 
 * [01 원 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/Soloar/solar01.py)
 
+* [02 구 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/Soloar/solar02.py)
 
 ### 실습 6: 입체 그리기
 
