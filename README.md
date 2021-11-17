@@ -163,6 +163,8 @@ exec_() => exec()
 
 * [03 키보드로 로봇 제어하기](https://github.com/dknife/2021Graphics/blob/main/Source/Robot/robot03.py)
 
+* [04 로봇 완성](https://github.com/dknife/2021Graphics/blob/main/Source/Robot/robot04.py)
+
 ### 실습 6: 입체 그리기
 
 [<img src="Source/05_Object/images/0501tetra.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/01_Tetrahedron_Vertices.py)
