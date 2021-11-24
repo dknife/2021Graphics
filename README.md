@@ -198,3 +198,5 @@ exec_() => exec()
 * [1단계](https://github.com/dknife/2021Graphics/blob/main/Source/3DObject/step01.py)
 
 * [2단계](https://github.com/dknife/2021Graphics/blob/main/Source/3DObject/step02.py)
+
+* [3단계](https://github.com/dknife/2021Graphics/blob/main/Source/3DObject/step03.py) - 삼각형을 1번 분할하기
