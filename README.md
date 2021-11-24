@@ -191,3 +191,8 @@ exec_() => exec()
 * [03 면을 분할하여 구 만들기](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/03_subdivision.py)
 
 * [04 정점 색상 지정하여 면 그리기](https://github.com/dknife/2021Graphics/blob/main/Source/05_Object/04_subdivision_solid.py)
+
+
+### 실습 단계 
+
+* [1단계](https://github.com/dknife/2021Graphics/blob/main/Source/3DObject/step01.py)
