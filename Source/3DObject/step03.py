@@ -21,6 +21,7 @@ class MyGLWidget(QOpenGLWidget):
         # ^{\it \color{gray}  OpenGL 그리기를 수행하기 전에 각종 상태값을 초기화}^
         glClearColor(0.8, 0.8, 0.6, 1.0)
         glPointSize(10)
+        glEnable(GL_DEPTH_TEST)
 
     def resizeGL(self, width, height):
         # ^{\it \color{gray}  카메라의 투영 특성을 여기서 설정}^
@@ -46,12 +47,12 @@ class MyGLWidget(QOpenGLWidget):
             glVertex3fv(self.verts[i])
         glEnd()
 
-        draw_cube()
+     
         glColor3f(0, 0, 1)
         glLineWidth(3)
         draw_triangle(self.verts[0], self.verts[2], self.verts[1], subdivide=True)
-        draw_triangle(self.verts[1], self.verts[2], self.verts[3], subdivide=True)
-        draw_triangle(self.verts[3], self.verts[2], self.verts[0], subdivide=True)
+        draw_triangle(self.verts[0], self.verts[3], self.verts[2], subdivide=True)
+        draw_triangle(self.verts[2], self.verts[3], self.verts[1], subdivide=True)
         draw_triangle(self.verts[0], self.verts[1], self.verts[3], subdivide=True)
         glLineWidth(1)
 
@@ -98,7 +99,14 @@ def main(argv = []):
 def draw_triangle(v0, v1, v2, subdivide = False):
 
     if subdivide == False:
+        glColor3f(0, 0, 1)
         glBegin(GL_LINE_LOOP)
+        glVertex3fv(v0)
+        glVertex3fv(v1)
+        glVertex3fv(v2)
+        glEnd()
+        glColor3f(1, 1, 0)
+        glBegin(GL_TRIANGLES)
         glVertex3fv(v0)
         glVertex3fv(v1)
         glVertex3fv(v2)
@@ -118,7 +126,7 @@ def draw_triangle(v0, v1, v2, subdivide = False):
 
         draw_triangle(v0, v01, v20)
         draw_triangle(v01, v1, v12)
-        draw_triangle(v20, v1, v2)
+        draw_triangle(v20, v12, v2)
         draw_triangle(v20, v01, v12)
 
 
