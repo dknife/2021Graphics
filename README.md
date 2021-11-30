@@ -204,3 +204,18 @@ exec_() => exec()
 * [4단계](https://github.com/dknife/2021Graphics/blob/main/Source/3DObject/step04.py) - 삼각형을 여러번 분할하고 면으로 그리기
 
 * [5단계](https://github.com/dknife/2021Graphics/blob/main/Source/3DObject/step05.py) - 조명 적용해 보기
+
+
+### 조명 다루기
+
+[<img src="Source/Lighting/Light01.jpg" height=150px>]
+
+[<img src="Source/Lighting/Light02.jpg" height=150px>]
+
+[<img src="Source/Lighting/Light03.jpg" height=150px>]
+
+[<img src="Source/Lighting/Light04.jpg" height=150px>]
+
+[<img src="Source/Lighting/Light05.jpg" height=150px>]
+
+[<img src="Source/Lighting/Light06.jpg" height=150px>]
