@@ -10,7 +10,6 @@ import numpy as np
 import math
 
 
-
 class MyGLWidget(QOpenGLWidget):
 
     def __init__(self, parent=None):
@@ -27,9 +26,8 @@ class MyGLWidget(QOpenGLWidget):
         glEnable(GL_DEPTH_TEST)
         glEnable(GL_LIGHTING)
         glEnable(GL_LIGHT0)
-
         self.LightSet()
-        
+
     def resizeGL(self, width, height):
         # ^{\it \color{gray}  카메라의 투영 특성을 여기서 설정}^
         glMatrixMode(GL_PROJECTION)
@@ -40,52 +38,54 @@ class MyGLWidget(QOpenGLWidget):
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
-        x = 25.2*math.sin(self.angle)
-        z = 25.2*math.cos(self.angle)
-        gluLookAt(x, 3, z, 0,0,0, 0,1,0)
+        x = 25*math.sin(self.angle)
+        z = 25*math.cos(self.angle)
+        gluLookAt(x, 2.0, z, 0,0,0, 0,1,0)
+
         self.LightPosition()
 
-     
         for row in range(5):
             for col in range(5):
-                glPushMatrix()                
-                glTranslatef((row-2)*2, col*2, 0)
+                glPushMatrix()
+                glTranslatef((row-2)*4, (col-2)*4, 0)
                 self.draw_sphere()
                 glPopMatrix()
+
 
         # ^{\it \color{gray}  그려진 프레임버퍼를 화면으로 송출}^
         glFlush()
 
-    def set_angle(self, val):
-        self.angle = 6.28*val/100
-        self.update()
-
-    def set_light(self, val):
-        self.lightx = 2. * (val-50)/50
-        self.update()
-
     def draw_sphere(self):
         glColor3f(0, 0, 1)
         glLineWidth(3)
-        nSub = 3
+        nSub = 2
         draw_triangle(self.verts[0], self.verts[2], self.verts[1], subdivide=nSub)
         draw_triangle(self.verts[0], self.verts[3], self.verts[2], subdivide=nSub)
         draw_triangle(self.verts[2], self.verts[3], self.verts[1], subdivide=nSub)
         draw_triangle(self.verts[0], self.verts[1], self.verts[3], subdivide=nSub)
         glLineWidth(1)
 
+    def set_angle(self, val):
+        self.angle = 6.28*val/100
+        self.update()
+    
+    def set_light(self, val):
+        self.lightx = 3*(val-50)/50
+        self.update()
+
     def LightSet(self):
         glMaterialfv(GL_FRONT, GL_SPECULAR, [1.0, 1.0, 1.0, 1.0])
-        glMaterialfv(GL_FRONT, GL_DIFFUSE, [1.0, 1.0, 1.0, 1.0])
-        glMaterialfv(GL_FRONT, GL_AMBIENT, [1.0, 1.0, 0.0, 1.0])
-        glMaterialf(GL_FRONT, GL_SHININESS, 127)
+        glMaterialfv(GL_FRONT, GL_DIFFUSE, [1.0, 0.0, 0.0, 1.0])
+        glMaterialfv(GL_FRONT, GL_AMBIENT, [1.0, 0.0, 0.0, 1.0])
+        glMaterialf(GL_FRONT, GL_SHININESS, 120)
 
         glLightfv(GL_LIGHT0, GL_SPECULAR, [1.0, 1.0, 1.0, 1.0])
-        glLightfv(GL_LIGHT0, GL_DIFFUSE, [1.0, 1.0, 0.0, 1.0])
+        glLightfv(GL_LIGHT0, GL_DIFFUSE, [1.0, 1.0, 1.0, 1.0])
         glLightfv(GL_LIGHT0, GL_AMBIENT, [0.0, 0.0, 0.0, 1.0])
 
     def LightPosition(self) :
-        glLightfv(GL_LIGHT0, GL_POSITION, [self.lightx, 2, 2, 1])
+        glLightfv(GL_LIGHT0, GL_POSITION, [self.lightx, self.lightx, 2, 1])
+
 
 
 class MyWindow(QMainWindow):
@@ -114,6 +114,7 @@ class MyWindow(QMainWindow):
         gui_layout.addWidget(light_slider)
         light_slider.valueChanged.connect(lambda val: self.glWidget.set_light(val))
 
+
 def main(argv = []):
     app = QApplication(argv)
     window = MyWindow('Tetrahedron Vertices')
@@ -121,18 +122,24 @@ def main(argv = []):
     window.show()
     sys.exit(app.exec_())
 
+def normalize(v) :
+    return v / np.linalg.norm(v)
 
+
+def computeNormal(v0, v1, v2):
+    a = v1 - v0
+    b = v2 - v0
+    N = np.cross(a, b)
+    return N / np.linalg.norm(N)
 
 def draw_triangle(v0, v1, v2, subdivide = 0):
 
     if subdivide <= 0:
         glColor3f(1, 1, 0)
-        glBegin(GL_TRIANGLES)
-        glNormal3fv(normalize(v0))
+        glBegin(GL_TRIANGLES)        
+        glNormal3fv(computeNormal(v0, v1, v2))
         glVertex3fv(v0)
-        glNormal3fv(normalize(v1))
         glVertex3fv(v1)
-        glNormal3fv(normalize(v2))
         glVertex3fv(v2)
         glEnd()
     else :
@@ -153,15 +160,7 @@ def draw_triangle(v0, v1, v2, subdivide = 0):
         draw_triangle(v20, v12, v2, subdivide - 1)
         draw_triangle(v20, v01, v12, subdivide - 1)
 
-def normalize(v):
-    return v / np.linalg.norm(v)
-    
-def computeNormal(v0, v1, v2) :
-    v01 = v1 - v0
-    v02 = v2 - v0
-    N = np.cross(v01, v02)
-    l = np.linalg.norm(N)
-    return N / l
+
 
 if __name__ == '__main__':
     main(sys.argv)
