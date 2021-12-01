@@ -219,3 +219,5 @@ exec_() => exec()
 [<img src="Source/Lighting/Light05.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light05.py)
 
 [<img src="Source/Lighting/Light06.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light06.py)
+
+[점광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_point.py)
