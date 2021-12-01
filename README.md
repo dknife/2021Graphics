@@ -208,16 +208,11 @@ exec_() => exec()
 
 ### 조명 다루기
 
-[<img src="Source/Lighting/Light01.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light01.py)
-
+[<img src="Source/Lighting/Light01.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light01.py) 
 [<img src="Source/Lighting/Light02.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light02.py)
-
 [<img src="Source/Lighting/Light03.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light03.py)
-
 [<img src="Source/Lighting/Light04.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light04.py)
-
 [<img src="Source/Lighting/Light05.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light05.py)
-
 [<img src="Source/Lighting/Light06.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light06.py)
 
 [점 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_point.py)
@@ -226,6 +221,6 @@ exec_() => exec()
 
 [집중 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot.py)
 
-[두 개의 집중 광원 실습] [<img src="Source/Lighting/light_spots.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot2.py)
+[<img src="Source/Lighting/light_spots.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot2.py) - 두 개의 집중 광원 실습
 
 
