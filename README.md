@@ -226,4 +226,6 @@ exec_() => exec()
 
 [집중 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot.py)
 
-[두 개의 집중 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot2.py)
+[두 개의 집중 광원 실습] [<img src="Source/Lighting/light_spots.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot2.py)
+
+
