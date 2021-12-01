@@ -46,7 +46,7 @@ exec_() => exec()
 
 ##### 강의 8: 계층적 모델링 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/2021Graphics_Lec08_HierarchicalTransform.pdf)
 
-
+##### 강의 9: 조명모델 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec6_OGLLightingA.pdf)
 
 ## 실습 ##
 
