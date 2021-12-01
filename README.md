@@ -225,3 +225,5 @@ exec_() => exec()
 [방향 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_directional.py)
 
 [집중 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot.py)
+
+[두 개의 집중 광원 실습](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot2.py)
