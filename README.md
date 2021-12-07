@@ -225,4 +225,18 @@ exec_() => exec()
 
 [<img src="Source/Lighting/light_spots.jpg" height=150px>](https://github.com/dknife/2021Graphics/blob/main/Source/Lighting/Light_spot2.py) - 두 개의 집중 광원 실습
 
+### 메시 다루기
 
+메시 데이터
+
+[메시 포인트](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh01.py) 
+
+[메시 Wireframe](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh02.py) 
+
+[메시 면 - flat](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh03.py) 
+
+[메시 면 - smooth](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh04.py) 
+
+[메시 애니메이션 - 저속](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh05.py) 
+
+[메시 애니메이션 - 고속](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh06.py) 
