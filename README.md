@@ -48,6 +48,8 @@ exec_() => exec()
 
 ##### 강의 9: 조명모델 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec6_OGLLightingA.pdf)
 
+##### 강의 10: 메시 렌더링 [강의 자료](https://github.com/dknife/2021Graphics/blob/main/Lecture/Lec08_mesh.pdf)
+
 ## 실습 ##
 
 ### 실습 1: Qt 윈도우 생성
