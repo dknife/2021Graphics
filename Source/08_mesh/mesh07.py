@@ -85,22 +85,10 @@ class MyGLWidget(QOpenGLWidget):
 
     def __init__(self, parent=None):
         super(MyGLWidget, self).__init__(parent)
-        self.angle = 0.0
-        self.lightx = 0.0
         self.mesh = MeshLoader()
         self.mesh.load('./Mesh/mesh.txt') 
 
-        self.objRotation = 0
-
-        ##################################
-        self._timer = QBasicTimer()              # ^{\it \color{gray}타이머 생성}^
-        #self._timer.start(int(1000 / 60), self)  # ^{\it \color{gray}초당 60 프레임}^      
-
-    def timerEvent(self, QTimerEvent):
-        self.objRotation += 1
-        self.update()
-
-    def initializeGL(self):
+     def initializeGL(self):
         # ^{\it \color{gray}  OpenGL 그리기를 수행하기 전에 각종 상태값을 초기화}^
         glClearColor(0.8, 0.8, 0.6, 1.0)
         glPointSize(1)
@@ -126,26 +114,12 @@ class MyGLWidget(QOpenGLWidget):
 
         self.LightPosition()
 
-        glBegin(GL_POINTS)
-        glVertex3f(self.lightx, self.lightx, 5)
-        glEnd()
 
-        glPushMatrix()
-        glRotatef(self.objRotation, 0, 1, 1)
         self.mesh.draw_fast()
-        glPopMatrix()
 
         # ^{\it \color{gray}  그려진 프레임버퍼를 화면으로 송출}^
         glFlush()
 
-
-    def set_angle(self, val):
-        self.angle = 6.28*val/100
-        self.update()
-    
-    def set_light(self, val):
-        self.lightx = 6*(val-50)/50
-        self.update()
 
     def LightSet(self):
         glMaterialfv(GL_FRONT, GL_SPECULAR, [1.0, 1.0, 1.0, 1.0])
