@@ -88,7 +88,9 @@ class MyGLWidget(QOpenGLWidget):
         self.mesh = MeshLoader()
         self.mesh.load('./Mesh/mesh.txt') 
 
-     def initializeGL(self):
+
+
+    def initializeGL(self):
         # ^{\it \color{gray}  OpenGL 그리기를 수행하기 전에 각종 상태값을 초기화}^
         glClearColor(0.8, 0.8, 0.6, 1.0)
         glPointSize(1)
