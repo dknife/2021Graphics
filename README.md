@@ -8,6 +8,8 @@
 
 [카메라 회전이 추가된 관찰](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh10.py) 
 
+[카메라 회전 방향을 따라 전진 후진](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh11.py) 
+
 
 # 3D 컴퓨터 그래픽스
 #### 이 저장소는 2021년 동명대학교 게임공학과 그래픽스 프로그래밍 수업을 위한 저장소입니다.
