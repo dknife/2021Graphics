@@ -125,37 +125,6 @@ def computeNormal(v0, v1, v2):
     N = np.cross(a, b)
     return N / np.linalg.norm(N)
 
-def draw_triangle(v0, v1, v2, subdivide = 0):
-
-    if subdivide <= 0:
-        glColor3f(1, 1, 0)
-        glBegin(GL_TRIANGLES)        
-        glNormal3fv(computeNormal(v0, v1, v2))
-        #glNormal3fv(normalize(v0))
-        glVertex3fv(v0)
-        #glNormal3fv(normalize(v1))
-        glVertex3fv(v1)
-        #glNormal3fv(normalize(v2))
-        glVertex3fv(v2)
-        glEnd()
-    else :
-        v01 = v0 + v1
-        v12 = v1 + v2
-        v20 = v2 + v0
-        l01 = np.linalg.norm(v01)  # v01이 원점에서 얼마나 떨어져 있는가
-        l12 = np.linalg.norm(v12)  # v12이 원점에서 얼마나 떨어져 있는가
-        l20 = np.linalg.norm(v20)  # v20이 원점에서 얼마나 떨어져 있는가
-        
-        root3 = math.sqrt(3.0)
-        v01 = v01 * root3 / l01
-        v12 = v12 * root3 / l12
-        v20 = v20 * root3 / l20
-
-        draw_triangle(v0, v01, v20, subdivide - 1)
-        draw_triangle(v01, v1, v12, subdivide - 1)
-        draw_triangle(v20, v12, v2, subdivide - 1)
-        draw_triangle(v20, v01, v12, subdivide - 1)
-
 
 
 if __name__ == '__main__':
