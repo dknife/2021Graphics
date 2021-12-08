@@ -1,3 +1,7 @@
+### 보충수업 코드
+
+[슬라이더 없는 메시 관찰](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh07.py) 
+
 # 3D 컴퓨터 그래픽스
 #### 이 저장소는 2021년 동명대학교 게임공학과 그래픽스 프로그래밍 수업을 위한 저장소입니다.
 #### 이 저장소의 코드는 Windows 10 / MacOS Big Sur + Visual Studio Code + Python 3 + PyOpenGL + PyQt5 로 테스트되었습니다.
