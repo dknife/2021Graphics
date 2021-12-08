@@ -233,6 +233,8 @@ exec_() => exec()
 
 [메시 데이터 2](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh2.txt) 
 
+[메시 데이터 더 구하기](https://people.sc.fsu.edu/~jburkardt/data/ply/ply.html)
+
 #### 메시 로딩 
 
 [메시 로딩 전](https://github.com/dknife/2021Graphics/blob/main/Source/08_mesh/mesh00.py) 
